@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DIESEL TECH SOLUTIONS provides heavy-duty diesel truck repair, diagnostics, preventive maintenance, and fleet service in Charlotte, NC.">
+  <title>DIESEL TECH SOLUTIONS | Heavy-Duty Diesel Repair</title>
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #15191f;
+      --text: #f4f5f6;
+      --muted: #b8bec6;
+      --orange: #ff6a00;
+      --silver: #c5cbd2;
+      --line: #303741;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1100px, 92%); margin: 0 auto; }
+    header {
+      background: rgba(11,13,16,.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+    .brand { font-weight: 900; letter-spacing: .7px; line-height: 1.15; }
+    .brand span { color: var(--orange); }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: var(--muted); text-decoration: none; font-size: .94rem; }
+    nav a:hover { color: var(--orange); }
+    .hero {
+      padding: 92px 0 82px;
+      background: radial-gradient(ellipse at 80% 10%, #382012 0, transparent 42%),
+                  linear-gradient(135deg, #11151a, #090a0c 72%);
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow { color: var(--orange); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
+    h1 { font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1.03; margin: 12px 0 18px; max-width: 850px; }
+    h1 span { color: var(--orange); }
+    .hero p { color: var(--muted); max-width: 680px; font-size: 1.12rem; }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 13px 20px; border-radius: 6px;
+      text-decoration: none; font-weight: 800; border: 1px solid var(--orange);
+    }
+    .btn.primary { background: var(--orange); color: #111; }
+    .btn.secondary { color: var(--text); }
+    .btn:hover { transform: translateY(-1px); }
+    section { padding: 68px 0; }
+    .section-title { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 10px; }
+    .intro { color: var(--muted); max-width: 700px; margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
+    .card { background: var(--panel); border: 1px solid var(--line); padding: 23px; border-radius: 10px; }
+    .card h3 { margin-top: 0; margin-bottom: 8px; }
+    .card p { color: var(--muted); margin-bottom: 0; }
+    .mark { color: var(--orange); font-size: 1.4rem; font-weight: 900; }
+    .fleet { background: #11151a; border-block: 1px solid var(--line); }
+    .fleet-inner { display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: center; }
+    .checks { padding-left: 0; list-style: none; }
+    .checks li { margin: 10px 0; color: var(--muted); }
+    .checks li::before { content: "✓"; color: var(--orange); font-weight: 900; margin-right: 10px; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 24px; align-items: start; }
+    .contact-line { padding: 13px 0; border-bottom: 1px solid var(--line); }
+    .contact-line strong { display: block; color: var(--silver); font-size: .9rem; }
+    .contact-line a { color: var(--text); text-decoration: none; overflow-wrap: anywhere; }
+    .contact-line a:hover { color: var(--orange); }
+    form { display: grid; gap: 12px; }
+    input, select, textarea {
+      width: 100%; padding: 13px; border-radius: 6px; border: 1px solid #414954;
+      background: #0d1014; color: var(--text); font: inherit;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+    button { cursor: pointer; font: inherit; }
+    footer { border-top: 1px solid var(--line); padding: 24px 0; color: var(--muted); font-size: .9rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .fleet-inner, .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding: 66px 0; }
+      .nav { align-items: flex-start; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">DIESEL TECH <span>SOLUTIONS</span></div>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#fleets">Fleet Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Heavy-Duty Diesel Repair · Charlotte, NC</div>
+        <h1>BUILT TO FIX.<br><span>POWERED TO PERFORM.</span></h1>
+        <p>Dependable heavy-duty truck diagnostics, repairs, and preventive maintenance to help keep your equipment working and your business moving.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Request Service</a>
+          <a class="btn secondary" href="tel:+19802303314">Call 980-230-3314</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2 class="section-title">Diesel Repair Services</h2>
+        <p class="intro">Practical repair support for heavy-duty trucks and commercial equipment. Contact us with your vehicle, symptoms, and location to discuss the next step.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="mark">01</div>
+            <h3>Diagnostics & Troubleshooting</h3>
+            <p>Fault-code diagnosis, electrical troubleshooting, no-start concerns, warning lights, and performance issues.</p>
+          </article>
+          <article class="card">
+            <div class="mark">02</div>
+            <h3>Preventive Maintenance</h3>
+            <p>Scheduled maintenance, oil and filter service, inspections, and maintenance planning to help reduce downtime.</p>
+          </article>
+          <article class="card">
+            <div class="mark">03</div>
+            <h3>Heavy-Duty Repairs</h3>
+            <p>Repair support for common engine, cooling, air system, brake, and aftertreatment concerns.</p>
+          </article>
+          <article class="card">
+            <div class="mark">04</div>
+            <h3>Brake & Air Systems</h3>
+            <p>Inspection and troubleshooting for air leaks, brake concerns, and related heavy-duty components.</p>
+          </article>
+          <article class="card">
+            <div class="mark">05</div>
+            <h3>Mobile Service</h3>
+            <p>Ask about on-site service availability, travel charges, and whether your repair is suitable for a mobile visit.</p>
+          </article>
+          <article class="card">
+            <div class="mark">06</div>
+            <h3>Fleet Maintenance</h3>
+            <p>Maintenance and repair support for owner-operators and small-to-medium commercial fleets.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet" id="fleets">
+      <div class="wrap fleet-inner">
+        <div>
+          <div class="eyebrow">For Owner-Operators & Fleets</div>
+          <h2 class="section-title">Less Downtime. More Miles.</h2>
+          <p class="intro">Build a service plan around your equipment, schedule, and operating needs. Reach out to discuss recurring maintenance, repair priorities, and fleet pricing.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#contact">Ask About Fleet Service</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>How to get started</h3>
+          <ul class="checks">
+            <li>Tell us the truck year, make, and model</li>
+            <li>Share the fault codes or symptoms</li>
+            <li>Include your location and preferred timing</li>
+            <li>Request an estimate before authorizing repairs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Contact DIESEL TECH SOLUTIONS</h2>
+        <p class="intro">Need diagnostics, repairs, or maintenance? Call, email, or send the service details below.</p>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <div class="contact-line">
+              <strong>Phone 1</strong>
+              <a href="tel:+19802303314">980-230-3314</a>
+            </div>
+            <div class="contact-line">
+              <strong>Phone 2</strong>
+              <a href="tel:+19805051871">980-505-1871</a>
+            </div>
+            <div class="contact-line">
+              <strong>Email</strong>
+              <a href="mailto:Dieseltechsolutions1@gmail.com">Dieseltechsolutions1@gmail.com</a>
+            </div>
+            <div class="contact-line">
+              <strong>Service Area</strong>
+              <span>Charlotte, North Carolina and surrounding areas</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Request a quote</h3>
+            <p class="intro">Submitting this form opens an email draft in your email app for you to review and send.</p>
+            <form id="quoteForm">
+              <input id="name" name="name" placeholder="Your name or company" required>
+              <input id="phone" name="phone" type="tel" placeholder="Your phone number" required>
+              <input id="vehicle" name="vehicle" placeholder="Truck year, make, and model">
+              <select id="service" name="service" required>
+                <option value="">Select service needed</option>
+                <option>Diagnostics</option>
+                <option>Preventive maintenance</option>
+                <option>Engine or mechanical repair</option>
+                <option>Brake or air system</option>
+                <option>Mobile service</option>
+                <option>Fleet service</option>
+                <option>Other</option>
+              </select>
+              <textarea id="details" name="details" placeholder="Describe the issue, fault codes, truck location, and preferred timing"></textarea>
+              <button class="btn primary" type="submit">Prepare Email Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> DIESEL TECH SOLUTIONS</span>
+      <span>BUILT TO FIX. POWERED TO PERFORM.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("quoteForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const get = (id) => document.getElementById(id).value.trim();
+      const subject = encodeURIComponent("Diesel Repair Quote Request - " + (get("name") || "Website inquiry"));
+      const body = encodeURIComponent(
+        "Name / Company: " + get("name") + "\n" +
+        "Phone: " + get("phone") + "\n" +
+        "Truck: " + get("vehicle") + "\n" +
+        "Service Needed: " + get("service") + "\n\n" +
+        "Details:\n" + get("details")
+      );
+      window.location.href = "mailto:Dieseltechsolutions1@gmail.com?subject=" + subject + "&body=" + body;
+    });
+  </script>
+</body>
+</html>
